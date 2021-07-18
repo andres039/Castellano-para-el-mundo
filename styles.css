@@ -1,0 +1,93 @@
+body {
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+#grid {
+  display: grid;
+  grid-template-areas:
+    "a a1 a1"
+    "b b c"
+    ". d .";
+  width: 100vw;
+  gap: 1rem;
+}
+
+#navbar {
+  display: flex;
+  flex-flow: row wrap;
+  padding-right: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 12rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  grid-area: a1;
+  gap: 4rem;
+  justify-self: right;
+}
+li:hover {
+  text-decoration: underline hsl(61, 73%, 34%) solid 3px;
+  cursor: pointer;
+  text-underline-position: under;
+}
+#logos {
+  display: flex;
+  gap: 1rem;
+  padding-top: 4rem;
+  padding-left: 6rem;
+  grid-area: a;
+}
+h1 {
+  color: hsl(0, 52%, 45%);
+  font-size: 1.5rem;
+}
+
+#oficial {
+  align-self: flex-start;
+  box-shadow: 10px 10px 20px black;
+  grid-area: c;
+}
+#quijote {
+  height: 4rem;
+}
+p {
+  /*grid-row-start: 2;
+    grid-column-start: 1; */
+  padding-top: 2rem;
+  padding-left: 6rem;
+  max-width: 65ch;
+  min-width: 40ch;
+  font-size: larger;
+  grid-area: b;
+}
+p::first-line {
+  font-size: 2rem;
+}
+.reponse {
+  grid-row: ;
+}
+#videodoble {
+  grid-area: d;
+  padding-top: 12rem;
+  margin: 2rem;
+}
+@media screen and (max-width: 700px) {
+  #grid {
+    grid-template-areas:
+      "a"
+      "ab"
+      "a1"
+      "b"
+      "c"
+      "d";
+  }
+h1 {
+  grid-area: ab;
+}
+  #navbar {
+    display: flex;
+    flex-flow: column wrap;
+    grid-area: ab;
+    justify-self: center; 
+  }
+ }
