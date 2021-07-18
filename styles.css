@@ -81,6 +81,9 @@ p::first-line {
       "c"
       "d";
   }
+  #quijote {
+    grid-area: a;
+  }
 h1 {
   grid-area: ab;
 }
@@ -89,5 +92,11 @@ h1 {
     flex-flow: column wrap;
     grid-area: ab;
     justify-self: center; 
+    padding-bottom: 2rem;
+  }
+  p {
+    padding: 0px;
+    text-justify: inter-word;
+    text-align: justify;
   }
  }
