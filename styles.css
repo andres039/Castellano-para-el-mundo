@@ -135,17 +135,20 @@ p::first-line {
     flex-flow: column wrap;
     grid-area: a1;
     justify-self: start; 
-    padding-bottom: 2rem;
+    padding: 2rem;
     max-width: 100vw;
     margin: 0px;
+    gap: 1rem;
+  }
+  li:hover {
+    text-decoration: underline hsl(61, 73%, 34%) solid 3px;
+    cursor: pointer;
+    text-underline-position: under;
   }
   p {
-    padding: 0px;
-    text-justify: inter-word;
-    text-align: justify;
+    padding: 2rem;
     grid-area: b;
-    width: 70vw;
-    justify-self: safe;
+    width: 70vw;  
     margin-inline: 0;
   }
   #oficial {
@@ -153,6 +156,7 @@ p::first-line {
     max-width: 50vw;
     align-self: flex-start;
     justify-self: start;
+    padding: 2rem;
   }
   #video1 {
     grid-area: d;
@@ -164,5 +168,9 @@ p::first-line {
     margin-top: 2rem;
     justify-self: start;
     margin-inline: 0;
+  }
+  #video1, 
+  #video2 {
+    padding: 2rem;
   }
  } 
