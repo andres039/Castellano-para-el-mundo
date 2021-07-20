@@ -7,24 +7,25 @@ body {
   display: grid;
   grid-template-areas:
     "a a1 a1"
-    "b b c"
-    ". d .";
+    "b b1 c"
+    ". d ."
+    "e1 e2 . ";
   width: 100vw;
   gap: 1rem;
 }
-
+  
 #navbar {
   display: flex;
   flex-flow: row wrap;
   padding-right: 8rem;
   padding-top: 4rem;
   padding-bottom: 12rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   grid-area: a1;
   gap: 4rem;
   justify-self: right;
-}
+} 
 li:hover {
   text-decoration: underline hsl(61, 73%, 34%) solid 3px;
   cursor: pointer;
@@ -39,13 +40,14 @@ li:hover {
 }
 h1 {
   color: hsl(0, 52%, 45%);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 #oficial {
   align-self: flex-start;
   box-shadow: 10px 10px 20px black;
-  grid-area: c;
+  grid-area: b1;
+  justify-self: center;
 }
 #quijote {
   height: 4rem;
@@ -63,15 +65,23 @@ p {
 p::first-line {
   font-size: 2rem;
 }
-.reponse {
-  grid-row: ;
+#video1 {
+  grid-area: e1;
 }
-#videodoble {
-  grid-area: d;
-  padding-top: 12rem;
-  margin: 2rem;
+#video2 {
+  grid-area: e2;
 }
+#video1, #video2 {
+  margin: 8rem;
+  margin-top: 12rem;
+  justify-self: center;
+  box-shadow: 10px 10px 20px black;
+}
+
 @media screen and (max-width: 700px) {
+  * {
+    padding: 0px;
+  }
   #grid {
     grid-template-areas:
       "a"
@@ -79,24 +89,57 @@ p::first-line {
       "a1"
       "b"
       "c"
-      "d";
+      "d"
+      "e  ";
+      width: 100vw;
+      padding: 0px;
+      margin: 0px;
+  }
+  #logos {
+    width: 100vw;
+    justify-content: start;
   }
   #quijote {
     grid-area: a;
+    justify-self: start;
   }
-h1 {
+#logo {
   grid-area: ab;
+  font-size: large;
+  font-weight: 800;
+  justify-self: start;
+
 }
   #navbar {
     display: flex;
     flex-flow: column wrap;
-    grid-area: ab;
-    justify-self: center; 
+    grid-area: a1;
+    justify-self: start; 
     padding-bottom: 2rem;
+    max-width: 100vw;
+    margin: 0px;
   }
   p {
     padding: 0px;
     text-justify: inter-word;
     text-align: justify;
+    grid-area: b;
+    width: 70vw;
+    justify-self: safe;
   }
- }
+  #oficial {
+    grid-area: c;
+    max-width: 50vw;
+    align-self: flex-start;
+    justify-self: start;
+  }
+  #video1 {
+    grid-area: d;
+    justify-self: start;
+  }
+  #video2 {
+    grid-area: e;
+    margin-top: 2rem;
+    justify-self: start;
+  }
+ } 
