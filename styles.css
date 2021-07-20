@@ -1,7 +1,28 @@
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Playfair Display", serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 body {
   line-height: 1.6;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--ff-primary);
   background-color: white;
+}
+h1, 
+h2, 
+h3 {
+  font-family: var(--ff-accent);
 }
 #grid {
   display: grid;
@@ -20,7 +41,7 @@ body {
   padding-right: 8rem;
   padding-top: 4rem;
   padding-bottom: 12rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400;
   grid-area: a1;
   gap: 4rem;
@@ -53,8 +74,7 @@ h1 {
   height: 4rem;
 }
 p {
-  /*grid-row-start: 2;
-    grid-column-start: 1; */
+  margin-inline: auto;
   padding-top: 2rem;
   padding-left: 6rem;
   max-width: 65ch;
@@ -126,6 +146,7 @@ p::first-line {
     grid-area: b;
     width: 70vw;
     justify-self: safe;
+    margin-inline: 0;
   }
   #oficial {
     grid-area: c;
@@ -136,10 +157,12 @@ p::first-line {
   #video1 {
     grid-area: d;
     justify-self: start;
+    margin-inline: 0;
   }
   #video2 {
     grid-area: e;
     margin-top: 2rem;
     justify-self: start;
+    margin-inline: 0;
   }
  } 
