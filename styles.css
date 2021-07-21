@@ -44,6 +44,7 @@ h3 {
   grid-column: span 3;
   width: 100vw;
   justify-content: space-evenly;
+  gap: 2rem;
 }
   
 #navbar {
