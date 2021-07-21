@@ -30,7 +30,11 @@ h3 {
     "a a1 a1"
     "b b1 c"
     ". d ."
-    "e1 e2 . ";
+    "e1 e2 . "
+    "f . ."
+    ". g g"
+    "h . ."
+    "i i i";  
   width: 100vw;
   gap: 1rem;
 }
@@ -41,13 +45,13 @@ h3 {
   padding-right: 8rem;
   padding-top: 4rem;
   padding-bottom: 12rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
   grid-area: a1;
   gap: 4rem;
   justify-self: right;
 } 
-li:hover {
+.menu-items:hover {
   text-decoration: underline hsl(61, 73%, 34%) solid 3px;
   cursor: pointer;
   text-underline-position: under;
@@ -58,6 +62,10 @@ li:hover {
   padding-top: 4rem;
   padding-left: 6rem;
   grid-area: a;
+}
+a {
+  color: black;
+  text-decoration:var(--ff-primary);
 }
 h1 {
   color: hsl(0, 52%, 45%);
@@ -85,6 +93,11 @@ p {
 p::first-line {
   font-size: 2rem;
 }
+hr {
+  padding: 1rem;
+  border:hsl(0, 52%, 45%) solid 1px;
+  width: 100vw;
+}
 #video1 {
   grid-area: e1;
 }
@@ -97,7 +110,46 @@ p::first-line {
   justify-self: center;
   box-shadow: 10px 10px 20px black;
 }
+#clases {
+  font-family: var(--ff-primary);
+  grid-area: f;
+  background-color: lavenderblush;
+}
 
+#salas {
+  grid-area: g;
+  background-color: lightgray;
+}
+#cursos {
+  grid-area: h;
+}
+#lengua {
+  grid-area: i;
+  padding: 2rem;
+}
+.servicios {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  margin: 2rem;
+  padding: 3rem;
+  border: solid black 1px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 40px lightslategray;
+}
+.texto {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 70ch;
+  padding: 2rem;  
+}
+.fotos {
+max-height: 50%;
+display: block;
+box-shadow: 10px 10px 20px black;
+}
 @media screen and (max-width: 700px) {
   * {
     padding: 0px;
@@ -110,14 +162,17 @@ p::first-line {
       "b"
       "c"
       "d"
-      "e  ";
-      width: 100vw;
+      "e  "
+      "f"
+      "g"
+      "h"
+      "i";
+      max-width: 100vw;
       padding: 0px;
       margin: 0px;
   }
   #logos {
     width: 100vw;
-    justify-content: start;
   }
   #quijote {
     grid-area: a;
@@ -127,36 +182,45 @@ p::first-line {
   grid-area: ab;
   font-size: large;
   font-weight: 800;
-  justify-self: start;
 
 }
   #navbar {
     display: flex;
     flex-flow: column wrap;
-    grid-area: a1;
+    grid-area: ab;
     justify-self: start; 
-    padding: 2rem;
     max-width: 100vw;
-    margin: 0px;
+    margin-inline: 2rem;
     gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  #introduction {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    grid-area: a1;
+    max-width: 100vw;
+    height: fit-content;
+  }
+  p { 
+    padding-top: 10px;
+    padding-left: 10px;
+    max-width: 100vw;
+    font-size: larger;
   }
   li:hover {
     text-decoration: underline hsl(61, 73%, 34%) solid 3px;
     cursor: pointer;
     text-underline-position: under;
   }
-  p {
-    padding: 2rem;
-    grid-area: b;
-    width: 70vw;  
-    margin-inline: 0;
-  }
+
   #oficial {
     grid-area: c;
     max-width: 50vw;
     align-self: flex-start;
     justify-self: start;
-    padding: 2rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
   }
   #video1 {
     grid-area: d;
@@ -171,6 +235,22 @@ p::first-line {
   }
   #video1, 
   #video2 {
-    padding: 2rem;
+    max-width: 100vw;
+  }
+  .servicios{
+    max-width: 100vw;
+  }
+  #clases {
+    grid-area: f;
+  }
+  #salas {
+    grid-area: g;
+  }
+  #cursos {
+    grid-area: h;
+  }
+  #lengua {
+    grid-area: i;
+    max-width: 80vw;
   }
  } 
