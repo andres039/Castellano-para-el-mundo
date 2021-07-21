@@ -193,6 +193,10 @@ box-shadow: 10px 10px 20px black;
     margin-inline: 2rem;
     gap: 1rem;
     padding-bottom: 1rem;
+    border: black 1px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 4px;
   }
   #introduction {
     display: flex;
