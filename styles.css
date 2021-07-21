@@ -38,6 +38,13 @@ h3 {
   width: 100vw;
   gap: 1rem;
 }
+#introduction {
+  display: flex;
+  flex-flow: row wrap;
+  grid-column: span 3;
+  width: 100vw;
+  justify-content: space-evenly;
+}
   
 #navbar {
   display: flex;
@@ -47,7 +54,7 @@ h3 {
   padding-bottom: 12rem;
   font-size: 1.1rem;
   font-weight: 400;
-  grid-area: a1;
+  grid-column: span 2;
   gap: 4rem;
   justify-self: right;
 } 
@@ -73,22 +80,16 @@ h1 {
 }
 
 #oficial {
-  align-self: flex-start;
+  /* align-self: flex-start; */
   box-shadow: 10px 10px 20px black;
-  grid-area: b1;
-  justify-self: center;
 }
 #quijote {
   height: 4rem;
 }
 p {
-  margin-inline: auto;
-  padding-top: 2rem;
-  padding-left: 6rem;
   max-width: 65ch;
   min-width: 40ch;
   font-size: larger;
-  grid-area: b;
 }
 p::first-line {
   font-size: 2rem;
@@ -203,14 +204,14 @@ box-shadow: 10px 10px 20px black;
     flex-flow: column wrap;
     gap: 1rem;
     grid-area: a1;
-    max-width: 100vw;
+    max-width: 80vw;
     height: fit-content;
   }
   p { 
     padding-top: 10px;
     padding-left: 10px;
-    max-width: 100vw;
     font-size: larger;
+    max-width: 80vw;
   }
   li:hover {
     text-decoration: underline hsl(61, 73%, 34%) solid 3px;
