@@ -32,32 +32,40 @@ h3 {
     ". d ."
     "e1 e2 . "
     "f . ."
-    ". g g"
+    "g . ."
     "h . ."
     "i i i";  
   width: 100vw;
-  gap: 1rem;
+  gap: 2rem;
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  grid-row: 1;
+  width: 100vw;
+  justify-content: space-around;
+  margin-block: 2rem;
+  gap: 2rem;
 }
 #introduction {
   display: flex;
   flex-flow: row wrap;
   grid-column: span 3;
-  width: 100vw;
-  justify-content: space-evenly;
+  width: 90vw;
   gap: 2rem;
+  justify-content: space-around;
+  margin: 2rem;
 }
   
 #navbar {
   display: flex;
   flex-flow: row wrap;
-  padding-right: 8rem;
-  padding-top: 4rem;
-  padding-bottom: 12rem;
+  padding-top: 0.8rem;
   font-size: 1.1rem;
   font-weight: 400;
-  grid-column: span 2;
   gap: 4rem;
-  justify-self: right;
+  margin-inline: 2rem;
+  /* justify-self: right; */
 } 
 .menu-items:hover {
   text-decoration: underline hsl(61, 73%, 34%) solid 3px;
@@ -67,9 +75,9 @@ h3 {
 #logos {
   display: flex;
   gap: 1rem;
-  padding-top: 4rem;
-  padding-left: 6rem;
-  grid-area: a;
+  /* padding-top: 4rem; */
+  font-size: var(--ff-accent);
+  /* grid-area: a; */
 }
 a {
   color: black;
@@ -83,14 +91,15 @@ h1 {
 #oficial {
   /* align-self: flex-start; */
   box-shadow: 10px 10px 20px black;
+max-width: 80vw;
 }
 #quijote {
   height: 4rem;
 }
-p {
-  max-width: 65ch;
-  min-width: 40ch;
+p { 
   font-size: larger;
+  margin-inline: 1rem;
+  max-width: 55ch;
 }
 p::first-line {
   font-size: 2rem;
@@ -100,17 +109,12 @@ hr {
   border:hsl(0, 52%, 45%) solid 1px;
   width: 100vw;
 }
-#video1 {
-  grid-area: e1;
-}
-#video2 {
-  grid-area: e2;
-}
-#video1, #video2 {
-  margin: 8rem;
-  margin-top: 12rem;
-  justify-self: center;
+#video {
+  grid-area: auto;
+  max-width: 90vw;
+  margin: 1rem;
   box-shadow: 10px 10px 20px black;
+  justify-self: center;
 }
 #clases {
   font-family: var(--ff-primary);
@@ -128,15 +132,16 @@ hr {
 #lengua {
   grid-area: i;
   padding: 2rem;
+  max-width: 90vw;
 }
 .servicios {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
-  width: fit-content;
-  height: fit-content;
-  margin: 2rem;
-  padding: 3rem;
+  max-width: auto-fit;
+  max-height: auto-fit;
+  margin: 1.5rem;
+  padding: 1rem;
   border: solid black 1px;
   border-radius: 10px;
   box-shadow: 5px 5px 40px lightslategray;
@@ -152,7 +157,7 @@ max-height: 50%;
 display: block;
 box-shadow: 10px 10px 20px black;
 }
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   * {
     padding: 0px;
   }
@@ -259,4 +264,4 @@ box-shadow: 10px 10px 20px black;
     grid-area: i;
     max-width: 80vw;
   }
- } 
+ }  */
