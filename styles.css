@@ -17,14 +17,14 @@ p {
 body {
   line-height: 1.6;
   font-family: var(--ff-primary);
-  background-color: white;
+  background-color: rgb(241, 236, 236);
 }
 h1, 
 h2, 
 h3 {
   font-family: var(--ff-accent);
 }
-#grid {
+/* #grid {
   display: grid;
   grid-template-areas:
     "a a1 a1"
@@ -37,17 +37,13 @@ h3 {
     "i i i";  
   width: 100vw;
   gap: 2rem;
-}
-header {
-  display: flex;
-  flex-flow: row wrap;
-  grid-row: 1;
+} */
+#grid {
+  display: grid;
   width: 100vw;
-  justify-content: space-around;
-  margin-block: 2rem;
-  gap: 2rem;
+  /* justify-content: space-between; */
 }
-#introduction {
+/* #introduction {
   display: flex;
   flex-flow: row wrap;
   grid-column: span 3;
@@ -55,16 +51,21 @@ header {
   gap: 2rem;
   justify-content: space-around;
   margin: 2rem;
-}
+} */
   
 #navbar {
   display: flex;
   flex-flow: row wrap;
-  padding-top: 0.8rem;
-  font-size: 1.1rem;
+  justify-content: left;
+  /* padding-top: 0.8rem; */
+  font-size: 1.5rem;
   font-weight: 400;
-  gap: 4rem;
-  margin-inline: 2rem;
+  gap: 4rem; 
+  width: 100vw;
+  justify-self: center;
+  margin-top: 2rem;
+  padding: 1rem;
+
   /* justify-self: right; */
 } 
 .menu-items:hover {
@@ -72,31 +73,49 @@ header {
   cursor: pointer;
   text-underline-position: under;
 }
-#logos {
-  display: flex;
-  gap: 1rem;
-  /* padding-top: 4rem; */
-  font-size: var(--ff-accent);
-  /* grid-area: a; */
-}
 a {
   color: black;
   text-decoration:var(--ff-primary);
 }
+#icons {
+  margin: 1rem;
+  align-self:baseline;
+}
+#entrada {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: var(--ff-accent);
+  justify-content: space-around;
+  /* grid-area: a; */
+}
 h1 {
-  color: hsl(0, 52%, 45%);
-  font-size: 2rem;
+  color: hsl(0, 52%, 45%); 
+  font-size: 1.7rem;
+  margin: 0.5rem;
 }
 
 #oficial {
   /* align-self: flex-start; */
   box-shadow: 10px 10px 20px black;
-max-width: 80vw;
+  max-width: 80vw;
 }
 #quijote {
-  height: 4rem;
+  height: 12rem;
+  justify-self: center; 
+  margin-top: 2rem;
+  margin-inline: 1rem;
 }
-p { 
+.fotos {
+max-height: 50%;
+display: block;
+box-shadow: 10px 10px 20px black;
+}
+#main-pic {
+  max-height: 60%;
+  margin: 2rem;
+  width: minmax(90vw, 50vw);
+}
+/* p { 
   font-size: larger;
   margin-inline: 0.5rem;
   max-width: 55ch;
@@ -152,14 +171,6 @@ hr {
   max-width: 70ch;
   padding: 2rem;  
 }
-.fotos {
-max-height: 50%;
-display: block;
-box-shadow: 10px 10px 20px black;
-}
-#main-pic {
-  max-height: 70%;
-}
 #clases-extranjeros{
   display: flex;
   flex-flow: row wrap;
@@ -172,10 +183,8 @@ box-shadow: 10px 10px 20px black;
 #clases-header {
   display: flex;
   flex-flow: row wrap;
-}
-.prop {
-  margin: 2rem;
-}
+} */
+
 /* @media screen and (max-width: 700px) {
   * {
     padding: 0px;
