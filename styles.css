@@ -98,7 +98,7 @@ max-width: 80vw;
 }
 p { 
   font-size: larger;
-  margin-inline: 1rem;
+  margin-inline: 0.5rem;
   max-width: 55ch;
 }
 p::first-line {
@@ -156,6 +156,25 @@ hr {
 max-height: 50%;
 display: block;
 box-shadow: 10px 10px 20px black;
+}
+#main-pic {
+  max-height: 70%;
+}
+#clases-extranjeros{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  height: 90vh;
+  width: 90vw;
+  justify-content: center;
+  gap: 10rem;
+}
+#clases-header {
+  display: flex;
+  flex-flow: row wrap;
+}
+.prop {
+  margin: 2rem;
 }
 /* @media screen and (max-width: 700px) {
   * {
