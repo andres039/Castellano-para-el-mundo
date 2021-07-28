@@ -77,6 +77,21 @@ a {
   color: black;
   text-decoration:var(--ff-primary);
 }
+#a-clases{
+  color:indianred;
+}
+#a-salas{
+  color:rgb(46, 107, 128);
+}
+#a-blog{
+  color:mediumslateblue;
+}
+#a-lengua {
+  color:rgb(65, 180, 30)
+}
+#a-cursos{
+  color:orange;
+}
 #icons {
   margin: 1rem;
   align-self:baseline;
@@ -86,7 +101,11 @@ a {
   flex-flow: row wrap;
   font-size: var(--ff-accent);
   justify-content: space-around;
+  background-color: papayawhip;
   /* grid-area: a; */
+}
+#titulo {
+  align-self: center;
 }
 h1 {
   color: hsl(0, 52%, 45%); 
@@ -113,7 +132,19 @@ box-shadow: 10px 10px 20px black;
 #main-pic {
   max-height: 60%;
   margin: 2rem;
-  width: minmax(90vw, 50vw);
+  width: 100%;
+  border-radius: 5px;
+}
+@media (min-width: 740px) {
+  #navbar {
+    justify-content: center;
+  }
+  #main-pic {
+    width: 50%;
+  }
+  #titulo {
+    font-size: 3rem;
+  }
 }
 /* p { 
   font-size: larger;
