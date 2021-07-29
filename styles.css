@@ -101,7 +101,6 @@ a {
   flex-flow: row wrap;
   font-size: var(--ff-accent);
   justify-content: space-around;
-  background-color: papayawhip;
   /* grid-area: a; */
 }
 #titulo {
@@ -130,9 +129,9 @@ display: block;
 box-shadow: 10px 10px 20px black;
 }
 #main-pic {
-  max-height: 30%;
+  max-height: 70%;
   margin: 2rem;
-  width: 100%;
+  width: 70%;
   border-radius: 5px;
 }
 #clases-extranjeros{
@@ -149,7 +148,7 @@ box-shadow: 10px 10px 20px black;
     justify-content: center;
   }
   #main-pic {
-    width: 50%;
+    width: 40%;
   }
   #titulo {
     font-size: 3rem;
