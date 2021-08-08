@@ -18,6 +18,9 @@ body {
   line-height: 1.6;
   font-family: var(--ff-primary);
   background-color: rgb(241, 236, 236);
+  background-image: url(Mm\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1, 
 h2, 
@@ -59,11 +62,11 @@ h3 {
   justify-content: left;
   /* padding-top: 0.8rem; */
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 800;
   gap: 4rem; 
   width: 100vw;
   justify-self: center;
-  margin-top: 2rem;
+  margin-top: 6rem;
   padding: 1rem;
 
   /* justify-self: right; */
@@ -87,7 +90,7 @@ a {
   color:mediumslateblue;
 }
 #a-lengua {
-  color:rgb(65, 180, 30)
+  color:rgb(158, 22, 74)
 }
 #a-cursos{
   color:orange;
@@ -118,7 +121,7 @@ h1 {
   max-width: 80vw;
 }
 #quijote {
-  height: 16rem;
+  height: 10rem;
   justify-self: center; 
   margin-top: 2rem;
   margin-inline: 1rem;
