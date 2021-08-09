@@ -105,12 +105,13 @@ a {
   flex-flow: row wrap;
   font-size: var(--ff-accent);
   justify-content: space-around;
+  align-items: center;
   margin-top: 2rem;
   /* grid-area: a; */
 }
 #video {
   max-height: 120%;
-  margin: 2rem;
+  justify-self: center;
   width: 40%;
   border-radius: 5px;
 }
@@ -119,10 +120,10 @@ a {
   flex-flow: row wrap;
   align-self: center;
   align-items: center;
-  justify-content: space-around;
+  margin-inline: 4rem; 
   justify-self: center;
   width: 100vw;
-  gap:2rem;
+  gap:10rem;
   margin-top: 2rem;
 }
 h1 {
@@ -133,6 +134,7 @@ h1 {
 #bienvenida {
   font-family: Bodoni;
   font-style: italic;
+  font-size: xx-large;
 }
 #nombre {
   font-family: nickainley;
@@ -177,6 +179,15 @@ box-shadow: 10px 10px 20px black;
   }
   #titulo {
     font-size: 3rem;
+  }
+ 
+}
+@media (max-width: 812px) {
+  #video {
+    max-height: 120%;
+    justify-self: center;
+    width: 90%;
+    border-radius: 5px;
   }
 }
 /* p { 
