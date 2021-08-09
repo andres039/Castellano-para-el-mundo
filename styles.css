@@ -128,13 +128,13 @@ a {
 }
 h1 {
   color: hsl(0, 52%, 45%); 
-  font-size: 1.7rem;
+  font-size: 4rem;
   margin: 0.5rem;
 }
 #bienvenida {
   font-family: Bodoni;
   font-style: italic;
-  font-size: xx-large;
+  font-size: 2.7rem;
 }
 #nombre {
   font-family: nickainley;
