@@ -1,6 +1,6 @@
 :root {
   --ff-primary: "Roboto", sans-serif;
-  --ff-accent: "Playfair Display", serif;
+  --ff-accent: "Playfair Display", ;
 }
 *,
 *::before,
@@ -22,10 +22,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-h1, 
-h2, 
-h3 {
-  font-family: var(--ff-accent);
+@font-face {
+  font-family: Bodoni;
+  src: url(BodoniFLF-BoldItalic.ttf);
+  font-family: nickainley;
+  src:url(Nickainley.ttf);
 }
 /* #grid {
   display: grid;
@@ -93,7 +94,7 @@ a {
   color:rgb(158, 22, 74)
 }
 #a-cursos{
-  color:orange;
+  color:rgb(94, 64, 10);
 }
 #icons {
   margin: 1rem;
@@ -104,15 +105,37 @@ a {
   flex-flow: row wrap;
   font-size: var(--ff-accent);
   justify-content: space-around;
+  margin-top: 2rem;
   /* grid-area: a; */
 }
+#video {
+  max-height: 120%;
+  margin: 2rem;
+  width: 40%;
+  border-radius: 5px;
+}
 #titulo {
+  display: flex;
+  flex-flow: row wrap;
   align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  justify-self: center;
+  width: 100vw;
+  gap:2rem;
+  margin-top: 2rem;
 }
 h1 {
   color: hsl(0, 52%, 45%); 
   font-size: 1.7rem;
   margin: 0.5rem;
+}
+#bienvenida {
+  font-family: Bodoni;
+  font-style: italic;
+}
+#nombre {
+  font-family: nickainley;
 }
 
 #oficial {
@@ -122,7 +145,7 @@ h1 {
 }
 #quijote {
   height: 10rem;
-  justify-self: center; 
+  justify-self: left; 
   margin-top: 2rem;
   margin-inline: 1rem;
 }
@@ -132,7 +155,7 @@ display: block;
 box-shadow: 10px 10px 20px black;
 }
 #main-pic {
-  max-height: 90%;
+  max-height: 70%;
   margin: 2rem;
   width: 90%;
   border-radius: 5px;
