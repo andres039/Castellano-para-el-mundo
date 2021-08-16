@@ -131,13 +131,23 @@ box-shadow: 10px 10px 20px black;
   width: 90%;
   border-radius: 5px;
 }
-#clases-extranjeros{
-  display:grid;
-  background-color: papayawhip;
-  justify-content: center;background-color: papayawhip;
+#clases-fantasticas{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding: 2rem;
+  max-width: 60vw;
+}
+
+h2 {
+  font-size: 2rem;
+  color:hsl(0, 52%, 45%);
 }
 .prop {
-  justify-self: center;
+ max-width: 30vw;
+ max-height: 30vh;
+ margin: 1rem;
 }
 @media (min-width: 740px) {
   #navbar {
