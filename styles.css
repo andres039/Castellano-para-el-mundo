@@ -16,7 +16,7 @@ p {
 }
 body {
   line-height: 1.6;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-primary);  /* justify-content: space-between; */
   background-color: rgb(241, 236, 236);
   background-image: url(m3.png);
   background-repeat: no-repeat;
@@ -28,34 +28,13 @@ body {
   font-family: nickainley;
   src:url(Nickainley.ttf);
 }
-/* #grid {
-  display: grid;
-  grid-template-areas:
-    "a a1 a1"
-    "b b1 c"
-    ". d ."
-    "e1 e2 . "
-    "f . ."
-    "g . ."
-    "h . ."
-    "i i i";  
-  width: 100vw;
-  gap: 2rem;
-} */
+
 #grid {
   display: grid;
   width: 100vw;
-  /* justify-content: space-between; */
+
 }
-/* #introduction {
-  display: flex;
-  flex-flow: row wrap;
-  grid-column: span 3;
-  width: 90vw;
-  gap: 2rem;
-  justify-content: space-around;
-  margin: 2rem;
-} */
+
   
 #navbar {
   display: flex;
@@ -67,35 +46,25 @@ body {
   gap: 4rem; 
   width: 100vw;
   justify-self: center;
-  margin-top: 6rem;
+  margin-top: 2rem;
   padding: 1rem;
 
-  /* justify-self: right; */
 } 
 .menu-items:hover {
+  transition: 2s;
   text-decoration: underline hsl(140, 63%, 33%) solid 3px;
   cursor: pointer;
   text-underline-position: under;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
 }
 a {
-  color: black;
+  color: rgb(32, 34, 37);
   text-decoration:var(--ff-primary);
 }
-#a-clases{
-  color:indianred;
-}
-#a-salas{
-  color:rgb(46, 107, 128);
-}
-#a-blog{
-  color:mediumslateblue;
-}
-#a-lengua {
-  color:rgb(158, 22, 74)
-}
-#a-cursos{
-  color:rgb(94, 64, 10);
-}
+
 #icons {
   margin: 1rem;
   align-self:baseline;
@@ -120,10 +89,11 @@ a {
   flex-flow: row wrap;
   align-self: center;
   align-items: center;
-  margin-inline: 4rem; 
+  padding-inline: 2rem;
+  margin-inline: 2rem; 
   justify-self: center;
   width: 100vw;
-  gap:10rem;
+  gap:4rem;
   margin-top: 2rem;
 }
 h1 {
