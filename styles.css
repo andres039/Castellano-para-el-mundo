@@ -23,6 +23,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+p {
+  font-family: var(--ff-primary);
+}
 @font-face {
   font-family: Bodoni;
   src: url(BodoniFLF-BoldItalic.ttf);
@@ -47,8 +50,9 @@ body {
   gap: 4rem; 
   width: 100vw;
   justify-self: center;
-  margin-top: 2rem;
+  margin-top: 0rem;
   padding: 1rem;
+  background: transparent;
 
 } 
 .menu-items:hover {
@@ -95,7 +99,7 @@ a {
   justify-self: center;
   width: 100vw;
   gap:4rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 h1 {
   color: hsl(0, 52%, 45%); 
